@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Rooster.web.Models.Dienst>
+﻿@model DienstenFilteredList
 
 @{
 	ViewData["Title"] = "Index";
@@ -6,9 +6,22 @@
 
 <h1>Rooster</h1>
 
-<button>@Html.ActionLink("Vorige dag", "Previous", new { datum = ViewBag.datum })</button>
-@ViewBag.datum.ToString("dd/MM/yyyy")
-<button>@Html.ActionLink("Volgende dag", "Next", new { datum = ViewBag.datum })</button>
+<div>
+	<button>@Html.ActionLink("Vorige dag", "Previous", new { datum = Model.datum })</button>
+	@Model.datum.ToLongDateString()
+	<button>@Html.ActionLink("Volgende dag", "Next", new { datum = Model.datum })</button>
+</div>
+
+<label>Filter op afdeling:</label>
+
+<div>
+	<button>@Html.ActionLink("Alle", "SelectAfdeling", new { datum = Model.datum, afdeling = Dienst.Afdeling.Alle })</button>
+	<button>@Html.ActionLink("Vers", "SelectAfdeling", new { datum = Model.datum, afdeling = Dienst.Afdeling.Vers })</button>
+	<button>@Html.ActionLink("Kassa", "SelectAfdeling", new { datum = Model.datum, afdeling = Dienst.Afdeling.Kassa })</button>
+	<button>@Html.ActionLink("Vakkenvullen", "SelectAfdeling", new { datum = Model.datum, afdeling = Dienst.Afdeling.Vakkenvullen })</button>
+</div>
+
+<label>Planning of afdeling @Model.afdeling:</label>
 
 <div class="chart">
 	<div class="chart-row chart-period">
@@ -33,20 +46,17 @@
 		<span></span><span></span><span></span>
 	</div>
 	@{
-		@foreach (var item in Model)
+		@foreach (var item in Model.filteredDiensten)
 		{
-			if (item.begintijd.Date.Equals(ViewBag.datum))
-			{
-				<div class="chart-row">
-					<div class="chart-row-item">@item.medewerker</div>
-					<ul class="chart-row-bars">
-						<li class="chart-li-one" style="grid-column: @(item.begintijd.Hour * 4 + (item.begintijd.Minute / 15) + 1) / @(item.eindtijd.Hour * 4 + (item.eindtijd.Minute / 15) + 1)">
-							@item.afdeling | @item.begintijd.ToString("H:mm") - @item.eindtijd.ToString("H:mm")
-						</li>
-					</ul>
-				</div>
+			<div class="chart-row">
+				<div class="chart-row-item">@item.medewerker</div>
+				<ul class="chart-row-bars">
+					<li class="chart-li-one" style="grid-column: @(item.begintijd.Hour * 4 + (item.begintijd.Minute / 15) + 1) / @(item.eindtijd.Hour * 4 + (item.eindtijd.Minute / 15) + 1)">
+						@item.afdeling | @item.begintijd.ToString("H:mm") - @item.eindtijd.ToString("H:mm")
+					</li>
+				</ul>
+			</div>
 			}
-		}
 	}
 </div>
 
