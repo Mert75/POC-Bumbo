@@ -48,162 +48,162 @@ namespace Rooster.web.Controllers
 		{
 			diensten = new List<Dienst>();
 
-			#region 20 october
+			#region 25 october
 			diensten.Add(new Dienst
 			{ // year, month, day, hour, minute, second
-				begintijd = new DateTime(2020, 10, 20, 7, 45, 00),
-				eindtijd = new DateTime(2020, 10, 20, 16, 00, 00),
+				begintijd = new DateTime(2020, 10, 25, 7, 45, 00),
+				eindtijd = new DateTime(2020, 10, 25, 16, 00, 00),
 				afdeling = Dienst.Afdeling.Kassa,
 				medewerker = "Ard den Vogel"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 20, 11, 00, 00),
-				eindtijd = new DateTime(2020, 10, 20, 17, 15, 00),
+				begintijd = new DateTime(2020, 10, 25, 11, 00, 00),
+				eindtijd = new DateTime(2020, 10, 25, 17, 15, 00),
 				afdeling = Dienst.Afdeling.Kassa,
 				medewerker = "Bas Bahco"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 20, 15, 0, 00),
-				eindtijd = new DateTime(2020, 10, 20, 21, 30, 00),
+				begintijd = new DateTime(2020, 10, 25, 15, 0, 00),
+				eindtijd = new DateTime(2020, 10, 25, 21, 30, 00),
 				afdeling = Dienst.Afdeling.Kassa,
 				medewerker = "Mert Polat"
 			});
 			diensten.Add(new Dienst
 			{ // year, month, day, hour, minute, second
-				begintijd = new DateTime(2020, 10, 20, 8, 0, 00),
-				eindtijd = new DateTime(2020, 10, 20, 13, 15, 00),
+				begintijd = new DateTime(2020, 10, 25, 8, 0, 00),
+				eindtijd = new DateTime(2020, 10, 25, 13, 15, 00),
 				afdeling = Dienst.Afdeling.Vers,
 				medewerker = "Alex Waarts"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 20, 10, 30, 00),
-				eindtijd = new DateTime(2020, 10, 20, 16, 15, 00),
+				begintijd = new DateTime(2020, 10, 25, 10, 30, 00),
+				eindtijd = new DateTime(2020, 10, 25, 16, 15, 00),
 				afdeling = Dienst.Afdeling.Vers,
 				medewerker = "Joris Koevoets"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 20, 14, 0, 00),
-				eindtijd = new DateTime(2020, 10, 20, 21, 30, 00),
+				begintijd = new DateTime(2020, 10, 25, 14, 0, 00),
+				eindtijd = new DateTime(2020, 10, 25, 21, 30, 00),
 				afdeling = Dienst.Afdeling.Vers,
 				medewerker = "Remco van de Broek"
 			});
 			diensten.Add(new Dienst
 			{ // year, month, day, hour, minute, second
-				begintijd = new DateTime(2020, 10, 20, 8, 0, 00),
-				eindtijd = new DateTime(2020, 10, 20, 14, 0, 00),
+				begintijd = new DateTime(2020, 10, 25, 8, 0, 00),
+				eindtijd = new DateTime(2020, 10, 25, 14, 0, 00),
 				afdeling = Dienst.Afdeling.Vakkenvullen,
 				medewerker = "Marijn Kieboom"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 20, 11, 0, 00),
-				eindtijd = new DateTime(2020, 10, 20, 16, 15, 00),
+				begintijd = new DateTime(2020, 10, 25, 11, 0, 00),
+				eindtijd = new DateTime(2020, 10, 25, 16, 15, 00),
 				afdeling = Dienst.Afdeling.Vakkenvullen,
 				medewerker = "Johannes Vermeer"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 20, 14, 0, 00),
-				eindtijd = new DateTime(2020, 10, 20, 20, 30, 00),
+				begintijd = new DateTime(2020, 10, 25, 14, 0, 00),
+				eindtijd = new DateTime(2020, 10, 25, 20, 30, 00),
 				afdeling = Dienst.Afdeling.Vakkenvullen,
 				medewerker = "Gregorius van der Eijck"
 			});
 			#endregion
-			#region 21 october
+			#region 26 october
 			diensten.Add(new Dienst
 			{ // year, month, day, hour, minute, second
-				begintijd = new DateTime(2020, 10, 21, 7, 45, 00),
-				eindtijd = new DateTime(2020, 10, 21, 16, 00, 00),
+				begintijd = new DateTime(2020, 10, 26, 7, 45, 00),
+				eindtijd = new DateTime(2020, 10, 26, 16, 00, 00),
 				afdeling = Dienst.Afdeling.Kassa,
 				medewerker = "Piet Heijn"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 21, 11, 00, 00),
-				eindtijd = new DateTime(2020, 10, 21, 17, 15, 00),
+				begintijd = new DateTime(2020, 10, 26, 11, 00, 00),
+				eindtijd = new DateTime(2020, 10, 26, 17, 15, 00),
 				afdeling = Dienst.Afdeling.Kassa,
 				medewerker = "Sinterklaas"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 21, 15, 0, 00),
-				eindtijd = new DateTime(2020, 10, 21, 21, 30, 00),
+				begintijd = new DateTime(2020, 10, 26, 15, 0, 00),
+				eindtijd = new DateTime(2020, 10, 26, 21, 30, 00),
 				afdeling = Dienst.Afdeling.Kassa,
 				medewerker = "Marijn Kieboom"
 			});
 			diensten.Add(new Dienst
 			{ // year, month, day, hour, minute, second
-				begintijd = new DateTime(2020, 10, 21, 8, 0, 00),
-				eindtijd = new DateTime(2020, 10, 21, 13, 15, 00),
+				begintijd = new DateTime(2020, 10, 26, 8, 0, 00),
+				eindtijd = new DateTime(2020, 10, 26, 13, 15, 00),
 				afdeling = Dienst.Afdeling.Vers,
 				medewerker = "Joris Koevoets"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 21, 10, 30, 00),
-				eindtijd = new DateTime(2020, 10, 21, 16, 15, 00),
+				begintijd = new DateTime(2020, 10, 26, 10, 30, 00),
+				eindtijd = new DateTime(2020, 10, 26, 16, 15, 00),
 				afdeling = Dienst.Afdeling.Vers,
 				medewerker = "Remco van den Broek"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 21, 14, 0, 00),
-				eindtijd = new DateTime(2020, 10, 21, 21, 30, 00),
+				begintijd = new DateTime(2020, 10, 26, 14, 0, 00),
+				eindtijd = new DateTime(2020, 10, 26, 21, 30, 00),
 				afdeling = Dienst.Afdeling.Vers,
 				medewerker = "Mert Polat"
 			});
 			diensten.Add(new Dienst
 			{ // year, month, day, hour, minute, second
-				begintijd = new DateTime(2020, 10, 21, 8, 0, 00),
-				eindtijd = new DateTime(2020, 10, 21, 14, 0, 00),
+				begintijd = new DateTime(2020, 10, 26, 8, 0, 00),
+				eindtijd = new DateTime(2020, 10, 26, 14, 0, 00),
 				afdeling = Dienst.Afdeling.Vakkenvullen,
 				medewerker = "Alex Waarts"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 21, 11, 0, 00),
-				eindtijd = new DateTime(2020, 10, 21, 16, 15, 00),
+				begintijd = new DateTime(2020, 10, 26, 11, 0, 00),
+				eindtijd = new DateTime(2020, 10, 26, 16, 15, 00),
 				afdeling = Dienst.Afdeling.Vakkenvullen,
 				medewerker = "Harry Jekkers"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 21, 14, 0, 00),
-				eindtijd = new DateTime(2020, 10, 21, 20, 30, 00),
+				begintijd = new DateTime(2020, 10, 26, 14, 0, 00),
+				eindtijd = new DateTime(2020, 10, 26, 20, 30, 00),
 				afdeling = Dienst.Afdeling.Vakkenvullen,
 				medewerker = "Voornaam Achternaam"
 			});
 			#endregion
-			#region 22 october
+			#region 27 october
 			diensten.Add(new Dienst
 			{ // year, month, day, hour, minute, second
-				begintijd = new DateTime(2020, 10, 22, 7, 45, 00),
-				eindtijd = new DateTime(2020, 10, 22, 16, 00, 00),
+				begintijd = new DateTime(2020, 10, 27, 7, 45, 00),
+				eindtijd = new DateTime(2020, 10, 27, 16, 00, 00),
 				afdeling = Dienst.Afdeling.Kassa,
 				medewerker = "Ard den Vogel"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 22, 11, 00, 00),
-				eindtijd = new DateTime(2020, 10, 22, 17, 15, 00),
+				begintijd = new DateTime(2020, 10, 27, 11, 00, 00),
+				eindtijd = new DateTime(2020, 10, 27, 17, 15, 00),
 				afdeling = Dienst.Afdeling.Kassa,
 				medewerker = "Bas Bahco"
 			});
 			diensten.Add(new Dienst
 			{
-				begintijd = new DateTime(2020, 10, 22, 15, 0, 00),
-				eindtijd = new DateTime(2020, 10, 22, 21, 30, 00),
+				begintijd = new DateTime(2020, 10, 27, 19, 0, 00),
+				eindtijd = new DateTime(2020, 10, 27, 21, 30, 00),
 				afdeling = Dienst.Afdeling.Kassa,
 				medewerker = "Mert Polat"
 			});
 			diensten.Add(new Dienst
 			{ // year, month, day, hour, minute, second
-				begintijd = new DateTime(2020, 10, 22, 8, 0, 00),
-				eindtijd = new DateTime(2020, 10, 22, 13, 15, 00),
+				begintijd = new DateTime(2020, 10, 27, 8, 0, 00),
+				eindtijd = new DateTime(2020, 10, 27, 13, 15, 00),
 				afdeling = Dienst.Afdeling.Vers,
 				medewerker = "Alex Waarts"
 			});
@@ -213,34 +213,6 @@ namespace Rooster.web.Controllers
 				eindtijd = new DateTime(2020, 10, 22, 16, 15, 00),
 				afdeling = Dienst.Afdeling.Vers,
 				medewerker = "Joris Koevoets"
-			});
-			diensten.Add(new Dienst
-			{
-				begintijd = new DateTime(2020, 10, 22, 14, 0, 00),
-				eindtijd = new DateTime(2020, 10, 22, 21, 30, 00),
-				afdeling = Dienst.Afdeling.Vers,
-				medewerker = "Remco van de Broek"
-			});
-			diensten.Add(new Dienst
-			{ // year, month, day, hour, minute, second
-				begintijd = new DateTime(2020, 10, 22, 8, 0, 00),
-				eindtijd = new DateTime(2020, 10, 22, 14, 0, 00),
-				afdeling = Dienst.Afdeling.Vakkenvullen,
-				medewerker = "Marijn Kieboom"
-			});
-			diensten.Add(new Dienst
-			{
-				begintijd = new DateTime(2020, 10, 22, 11, 0, 00),
-				eindtijd = new DateTime(2020, 10, 22, 16, 15, 00),
-				afdeling = Dienst.Afdeling.Vakkenvullen,
-				medewerker = "Johannes Vermeer"
-			});
-			diensten.Add(new Dienst
-			{
-				begintijd = new DateTime(2020, 10, 22, 14, 0, 00),
-				eindtijd = new DateTime(2020, 10, 22, 20, 30, 00),
-				afdeling = Dienst.Afdeling.Vakkenvullen,
-				medewerker = "Gregorius van der Eijck"
 			});
 			#endregion
 
